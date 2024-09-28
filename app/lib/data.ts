@@ -16,6 +16,10 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
     name: "Experience",
     hash: "#experience",
   },
@@ -26,10 +30,6 @@ export const links = [
   {
     name: "Projects",
     hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
   },
   // {
   //   name: "Open Source Contribution",
@@ -87,14 +87,14 @@ export const projectsData = [
   {
     title: "Sociopedia React Application",
     description:
-      "",
-    tags: ["React","JavaScript", "MongoDB", "Tailwind", "Prisma"],
+      "Developed a Social Media Web Application for users to upload and share social events.",
+    tags: ["React","JavaScript", "MongoDB", "Node.js", "Material-UI"],
     imageUrl: sociopediaApp,
   },
   {
     title: "My Memory Application",
     description:
-      "",
+      "Developed a game application themed on superheroes to test memory power and speed in card selection.",
     tags: ["Kotlin", "App Development"],
     imageUrl: myMemoryApp,
   },
