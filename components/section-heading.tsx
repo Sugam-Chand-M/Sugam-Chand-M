@@ -15,6 +15,7 @@ export default function SectionHeading({
                     font-medium
                     capitalize
                     mb-8
+                    text-center
                 "
             >
                 {children}

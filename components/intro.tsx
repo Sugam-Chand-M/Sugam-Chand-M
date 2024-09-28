@@ -1,6 +1,6 @@
 "use client";
 
-import React,{useEffect,useRef} from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import profilePic from "@/public/SugamsPic.jpeg";
@@ -8,15 +8,21 @@ import {motion} from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useSectionInView } from "@/app/lib/hooks";
 
 export default function Intro(){
+    const {ref}=useSectionInView("Home",0.5);
     return (
         <section
+            ref={ref}
+            id="home"
             className="
+                mt-28
                 mb-28
                 max-w-[50rem]
                 text-center
                 sm:mb-0
+                scroll-mt-[100rem]
             "
         >
             {/* The below code is for the image/profile pic section. Will be commenting as no plans to implement yet*/}
@@ -103,7 +109,7 @@ export default function Intro(){
             </motion.p>
             <motion.span
                 className="
-                mb-10
+                mb-5
                 mt-4
                 px-4
                 text-2xl
