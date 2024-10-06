@@ -127,7 +127,7 @@ export default function Intro(){
                         >
                             <Typewriter 
                                 options={{ 
-                                    strings:["Software Engineer", "Programmer", "Movie Lover"],
+                                    strings:["Software Engineer", "Programmer", "Binge Watcher"],
                                     autoStart:true,
                                     delay:100,
                                     loop:true,

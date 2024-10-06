@@ -45,12 +45,12 @@ export const links = [
   },
 ] as const;
 
-export const education = [
+export const educationData = [
   {
     title: "B.E/B.Tech",
-    college: "Bangalore Instituite of Technology",
-    major:"Computer Science and Engineering",
-    cgpa: "9.44/10.0",
+    college: "Bangalore Institute of Technology",
+    major: "Computer Science and Engineering",
+    description:"Completed my B.E/B.Tech graduation from Bangalore Intitute of technology with a CGPA of 9.44 / 10.0 and was ranked top 2 in my batch.",
     icon: React.createElement(LuGraduationCap),
     date: "August 2019 - May 2023",
   }
@@ -58,29 +58,23 @@ export const education = [
 
 export const experiencesData = [
   {
-    title: "Software Engineer Intern",
-    location: "Bangalore, India",
-    description:
-      "",
-    icon: React.createElement(CgWorkAlt),
-    date: "February 2023 - August 2023",
-  },
-  {
     title: "Associate Software Engineer",
     location: "Bangalore, India",
+    company:"OpenText",
     description:
-      "",
+      "Currently working as an Associate Software Engineer at OpenText with expertise in handling customer issues and implementing features.",
     icon: React.createElement(CgWorkAlt),
     date: "September 2023 - Present",
   },
-  // {
-  //   title: "Full-Stack Developer",
-  //   location: "Houston, TX",
-  //   description:
-  //     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-  //   icon: React.createElement(FaReact),
-  //   date: "2021 - present",
-  // },
+  {
+    title: "Software Engineer Intern",
+    location: "Bangalore, India",
+    company:"MicroFocus [now OpenText]",
+    description:
+      "Worked as an intern at MicroFocus[now OpenText] with expertise in resolving defects and features.",
+    icon: React.createElement(CgWorkAlt),
+    date: "February 2023 - August 2023",
+  },
 ] as const;
 
 export const projectsData = [
@@ -115,9 +109,8 @@ export const skillsData = [
   "Git",
   "GitHub",
   "GitLab",
-  "Tailwind",
-  "Prisma",
+  "SQL",
+  "Express.js",
   "MongoDB",
   "PostgreSQL",
-  "Framer Motion",
 ] as const;
