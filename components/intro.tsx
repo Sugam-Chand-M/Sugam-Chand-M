@@ -9,9 +9,11 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/app/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro(){
     const {ref}=useSectionInView("Home",0.5);
+    const {activeSection, setActiveSection,setTimeOfLastClick}=useActiveSectionContext();
     return (
         <section
             ref={ref}
@@ -174,6 +176,10 @@ export default function Intro(){
                         active:scale-105
                         transition
                     "
+                    onClick={()=>{
+                        setActiveSection("Contact");
+                        setTimeOfLastClick(Date.now());
+                    }}
                 >
                     Contact Me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
                 </Link>
@@ -196,8 +202,7 @@ export default function Intro(){
                        active:scale-105
                        transition
                        cursor-pointer
-                       border
-                       border-black/10
+                       borderBlack
                     "
                 >
                     Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
@@ -221,8 +226,7 @@ export default function Intro(){
                        active:scale-105
                        transition
                        cursor-pointer
-                       border
-                       border-black/10
+                       borderBlack
                     "
                 >
                     <BsLinkedin />
@@ -246,8 +250,7 @@ export default function Intro(){
                        active:scale-105
                        transition
                        cursor-pointer
-                       border
-                       border-black/10
+                       borderBlack
                     "
                 >
                     <BsGithub />

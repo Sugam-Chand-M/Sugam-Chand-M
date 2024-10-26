@@ -12,7 +12,7 @@ export default function Hobbies(){
     return (
         <section
             ref={ref}
-            id="skills"
+            id="hobbies"
             className="
                 mt-28
                 mb-28
