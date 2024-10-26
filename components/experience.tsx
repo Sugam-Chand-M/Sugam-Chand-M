@@ -15,6 +15,8 @@ export default function Experience(){
             id="experience"
             className="
                 mb-28
+                scroll-mt-28
+                sm:mb-40
             "
         >
             <SectionHeading>
