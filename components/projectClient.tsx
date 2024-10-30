@@ -25,7 +25,7 @@ export default function ProjectClient({
             ref={ref}
             style={{
                 scale:scaleProgress,
-                opacity:scrollYProgress
+                opacity:opacityProgress
             }}
             className="
                 group
@@ -46,8 +46,11 @@ export default function ProjectClient({
                     sm:h-[20rem]
                     hover:bg-gray-200
                     transition
-                    group-even:pl-8
+                    sm:group-even:pl-8
                     rounded-lg
+                    dark:bg-white/10
+                    dark:hover:bg-white/20
+                    dark:text-white
                 "
                 >
                 <div
@@ -62,7 +65,7 @@ export default function ProjectClient({
                         flex
                         flex-col
                         h-full
-                        group-even:ml-[20rem]
+                        sm:group-even:ml-[20rem]
                     "
                 >
                     <h3
@@ -78,6 +81,7 @@ export default function ProjectClient({
                             mt-2
                             leading-relaxed
                             text-gray-700
+                            dark:text-white/70
                         "
                     >
                         {description}
@@ -103,6 +107,7 @@ export default function ProjectClient({
                                     tracking-wider
                                     text-white
                                     rounded-full
+                                    dark:text-white/70
                                 "
                             >
                                 {tag}
@@ -116,6 +121,8 @@ export default function ProjectClient({
                     quality={95}
                     className="
                         absolute
+                        hidden
+                        sm:block
                         top-8
                         -right-40
                         w-[28.25rem]

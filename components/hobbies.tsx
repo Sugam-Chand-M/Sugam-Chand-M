@@ -65,6 +65,8 @@ export default function Hobbies(){
                         rounded-full
                         outline-none
                         transition
+                        dark:bg-white/10
+                        dark:text-white/60
                     "
                 >
                     Follow Me on LetterBoxd <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
@@ -90,6 +92,9 @@ export default function Hobbies(){
                        cursor-pointer
                        border
                        border-black/20
+                       dark:bg-white/10
+                       dark:text-white/60
+                       dark:hover:text-gray-400
                     "
                 >
                     <FaSquareLetterboxd />
