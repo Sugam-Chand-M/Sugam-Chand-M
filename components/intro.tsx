@@ -184,7 +184,7 @@ export default function Intro(){
                     Contact Me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
                 </Link>
                 <Link
-                    href="https://drive.google.com/file/d/1ML4N0dWFRhj8Ro4ZzDDzMkqnh3hTwaSe/view?usp=sharing"
+                    href="https://drive.google.com/file/d/11Jozkr2xji71PAa-u_rpPM6OoVrdD0YU/view?usp=sharing"
                     target="_blank"
                     className="
                         group
