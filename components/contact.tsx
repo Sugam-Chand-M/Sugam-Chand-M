@@ -40,6 +40,7 @@ export default function Contact(){
                 className="
                     text-gray-800
                     -mt-6
+                    dark:text-white/80
                 "
             >
                 Please contact me directly through this form.
@@ -49,6 +50,7 @@ export default function Contact(){
                     mt-10
                     flex
                     flex-col
+                    dark:text-black
                 "
                 action={async (formData)=>{
                     const {data,error} = await sendEmail(formData);
@@ -65,6 +67,11 @@ export default function Contact(){
                         rounded-lg
                         borderBlack
                         px-4
+                        dark:bg-white
+                        dark:bg-opacity-80
+                        dark:focus:bg-opacity-100
+                        transition-all
+                        dark:outline-none
                     "
                     name="senderEmail"
                     placeholder="Your Email"
@@ -79,6 +86,11 @@ export default function Contact(){
                         rounded-lg
                         borderBlack
                         p-4
+                        dark:bg-white
+                        dark:bg-opacity-80
+                        dark:focus:bg-opacity-100
+                        transition-all
+                        dark:outline-none
                     "
                     name="message"
                     placeholder="Your Message"

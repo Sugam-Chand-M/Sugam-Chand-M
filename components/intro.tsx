@@ -202,7 +202,8 @@ export default function Intro(){
                        active:scale-105
                        transition
                        cursor-pointer
-                       borderBlack
+                       dark:bg-white/10
+                       dark:text-white/60
                     "
                 >
                     Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
@@ -227,6 +228,9 @@ export default function Intro(){
                        transition
                        cursor-pointer
                        borderBlack
+                       dark:bg-white/10
+                       dark:text-white/60
+                       dark:hover:text-blue-500
                     "
                 >
                     <BsLinkedin />
@@ -251,6 +255,9 @@ export default function Intro(){
                        transition
                        cursor-pointer
                        borderBlack
+                       dark:bg-white/10
+                       dark:text-white/60
+                       dark:hover:text-gray-950
                     "
                 >
                     <BsGithub />

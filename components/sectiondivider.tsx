@@ -13,6 +13,7 @@ export default function SectionDivider(){
                 w-1
                 rounded-full
                 sm:block
+                dark:bg-opacity-20
             "
             initial={{opacity:0,y:100}}
             animate={{opacity:1,y:0}}

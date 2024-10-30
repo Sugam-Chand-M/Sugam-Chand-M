@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import {Toaster} from "react-hot-toast"
+import ThemeSwitch from "@/components/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,9 @@ export default function RootLayout({
         bg-gray-50
         text-gray-950
         relative
+        dark:bg-gray-900
+        dark:text-gray-50
+        dark:text-opacity-90
       `}>
         <div className="
           bg-[#fbe2e3] 
@@ -37,6 +42,7 @@ export default function RootLayout({
           rounded-full
           blur-[10rem]
           sm:w-[68.75rem]
+          dark:bg-[#946263]
         ">
         </div>
         <div className="
@@ -54,14 +60,18 @@ export default function RootLayout({
           lg:left-[-28rem]
           xl:left-[-15rem]
           2xl:left-[-5rem]
+          dark:bg-[#676394]
         ">
         </div>
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-          
-          <Toaster position="top-right"/>
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <ThemeSwitch />
+            <Toaster position="top-right"/>
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

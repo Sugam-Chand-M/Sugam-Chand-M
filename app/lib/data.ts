@@ -103,6 +103,8 @@ export const skillsData = [
   "Java",
   "JavaScript",
   "TypeScript",
+  "C#",
+  ".NET Framework",
   "React",
   "Next.js",
   "Node.js",
